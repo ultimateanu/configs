@@ -1,7 +1,6 @@
 #
 # Additional mac specific config
 #
-#
 
 ### Better prompt ###
 PROMPT="%{$fg[green]%}[%n@`ipconfig getifaddr en0`] %2~ $%{$reset_color%} "
