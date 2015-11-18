@@ -1,0 +1,29 @@
+#
+# Additional arch specific config
+#
+
+# Block for login shell
+if [[ -o login ]]; then
+
+  # Modify env variables
+  export EDITOR=vim
+  export BROWSER=firefox
+  export GOPATH=$HOME/code/go
+  if [ -d "$GOPATH/bin" ]; then
+    export PATH=$PATH:$GOPATH/bin
+  fi
+
+  # Start GUI
+  [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
+
+fi
+
+
+# Better prompt
+PROMPT="%{$fg[green]%}[%n@%M] %2~ $%{$reset_color%} "
+RPROMPT="%(?..[%{$fg_bold[red]%}%?%{$reset_color%}])"
+
+# Alias
+alias ls='ls --color=auto'
+alias c='highlight -O ansi'
+alias time='time -p'
