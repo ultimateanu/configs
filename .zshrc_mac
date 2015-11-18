@@ -2,6 +2,10 @@
 # Additional mac specific config
 #
 
+### Colorful ls ###
+export CLICOLOR=1
+export LSCOLORS=gxfxbxdxCxegedabagacad
+
 ### Better prompt ###
 PROMPT="%{$fg[green]%}[%n@`ipconfig getifaddr en0`] %2~ $%{$reset_color%} "
 RPROMPT="%(?..[%{$fg_bold[red]%}%?%{$reset_color%}])"

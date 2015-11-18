@@ -9,10 +9,6 @@ SAVEHIST=10000
 setopt APPEND_HISTORY
 setopt EXTENDED_HISTORY
 
-### Colorful ls ###
-export CLICOLOR=1
-export LSCOLORS=gxfxbxdxCxegedabagacad
-
 ### Other ###
 setopt null_glob                                            # Silent error if no glob matches
 autoload -U compinit && compinit                            # Menu completion based on the command
