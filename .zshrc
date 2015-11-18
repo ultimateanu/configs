@@ -21,6 +21,7 @@ zstyle ':completion:*' menu select                          # Menu selection if 
 disable -r time                                             # Make time command work
 bindkey -v                                                  # Vim like bindings
 bindkey '^r' history-incremental-pattern-search-backward    # Ctrl-r history search
+TERM=xterm                                                  # Fixes issue with urxvt
 
 # Add bin in home dir to path
 if [ -d "$HOME/bin" ]; then
