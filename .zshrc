@@ -19,6 +19,9 @@ bindkey -v                                                  # Vim like bindings
 bindkey '^r' history-incremental-pattern-search-backward    # Ctrl-r history search
 TERM=xterm                                                  # Fixes issue with urxvt
 
+### Defaults ###
+export EDITOR=vim
+
 # Add bin in home dir to path
 if [ -d "$HOME/bin" ]; then
   export PATH="$PATH:$HOME/bin"
