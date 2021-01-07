@@ -13,6 +13,7 @@ RPROMPT="%(?..[%{$fg_bold[red]%}%?%{$reset_color%}])"
 ### Useful Aliases ###
 alias c='highlight -O ansi'
 alias time='time -p'
+alias brewup='brew update && brew upgrade'
 
 ### Additional bin for homebrew
 export PATH="/usr/local/sbin:$PATH"
