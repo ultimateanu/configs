@@ -29,6 +29,9 @@ fi
 if [ -d "$HOME/code/bin" ]; then
   export PATH="$PATH:$HOME/code/bin"
 fi
+if [ -d "$HOME/.dotnet/tools" ]; then
+  export PATH="$PATH:$HOME/.dotnet/tools"
+fi
 
 # Include local configs if they exist
 for local_config in $HOME/.zshrc_*; do
