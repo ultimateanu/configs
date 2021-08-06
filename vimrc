@@ -18,4 +18,4 @@ au BufRead,BufNewFile *.proto set filetype=proto
 au BufRead,BufNewFile *.go set filetype=go
 
 " Share clipboard with os
-set clipboard=unnamedplus
+set clipboard^=unnamed,unnamedplus
